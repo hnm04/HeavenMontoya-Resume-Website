@@ -32,17 +32,16 @@
     <p id="quote"></p>
 
     <py-script>
-import random
-from js import document
+    import random
+    from js import document
 
-quotes=[
-    "Believe you can and you're halfway there. - Theodore Roosevelt"
-    "Strive not to be success, but rather to be of value. - Albert Einstein"
-    "You become what you believe. - Oprah Winfrey"
-    "You can't use up creativity. The more you use, the more you have. -Maya Angelou"
-    "It's not the years in your life that count. It's the life in your years. - Abraham Lincoln"
-    "Either write something worth reading or do something worth writing. -Benjamin Franklin"
-    "The only way to do great work is to love what you do. -Steve Jobs"
+quotes = [ "Believe you can and you're halfway there. - Theodore Roosevelt", 
+    "Strive not to be sucess, ut rather to be of value. - Albert Einstein", 
+    "You become what you believe. - Oprah Winfrey", 
+    "You can't use up creativity. The more you use, the more you have. -Maya Angelou", 
+    "It's not the years in your life that count. It's the life in your years. - Abraham Lincoln", 
+    "Either write something worth reading or do something worth writing. -Benjamin Franklin", 
+    "The only way to do great work is to love what you do. -Steve Jobs", 
     "If you can dream it, you can achieve it. -Zig Ziglar"  
 ]
 document.getElementById("quote").innerText = random.choice(quotes)
