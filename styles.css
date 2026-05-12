@@ -75,9 +75,7 @@ button#downloadBtn:hover {
     }
 }
 <!------Portfolio ------->
-* {
-    box-sizing: border-box;
-}
+
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
@@ -87,12 +85,12 @@ button#downloadBtn:hover {
 
 .portfolio-card {
     background-color: white;
-    width: 45%;
+    flex: 0 1 45%;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    box-sizing: border-box;
 }
-
 
 /* Image */
 .portfolio-card img {
@@ -121,8 +119,9 @@ button#downloadBtn:hover {
     background-color: #3d8bd1;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
     .portfolio-card {
-        width: 90%;
+        flex: 0 1 90%;
     }
 }
