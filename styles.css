@@ -1,42 +1,25 @@
+
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    color: #000000;
-    margin: 0;
+    background-color: #eef6ff;
 }
+
+
+nav {
+    background-color: #8ec5ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000000;
+    color: white;
 }
+
 nav a:hover {
-    color: #0077cc;
+    color: #dff1ff;
 }
 
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.about-text {
-    max-width: 500px;
-    text-align: left;
-}
-.about-image img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
-#quote {
-    margin-top: 30px;
-    font-style: italic;
-}
 .resume-container {
     display: flex;
     gap: 20px;
@@ -48,12 +31,39 @@ nav a:hover {
 .resume-left,
 .resume-right {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
+
+
+.resume-left h2,
+.resume-right h2 {
+    color: #3b82c4;
+    border-bottom: 2px solid #cfe8ff;
+    padding-bottom: 5px;
+}
+
 
 button#downloadBtn {
     margin-top: 30px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #5da9e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+button#downloadBtn:hover {
+    background-color: #3d8bd1;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
 }
