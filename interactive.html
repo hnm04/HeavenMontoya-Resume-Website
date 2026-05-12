@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive IT Ticket</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #3b82c4;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #5da9e9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #summary {
+            background-color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Try an IT Helpdesk Ticket</h1>
+
+    <form onsubmit="submitTicket(event)">
+
+        <label>Name</label><br>
+        <input type="text" id="name" required><br>
+
+        <label>Issue Type</label><br>
+        <input type="text" id="issue" placeholder="Example: Password reset" required><br>
+
+        <label>Describe the Problem</label><br>
+        <textarea id="problem" rows="5" required></textarea><br>
+
+        <button type="submit">Submit Ticket</button>
+
+    </form>
+
+    <div id="summary">
+        <h2>Ticket Summary</h2>
+        <p>No ticket submitted yet.</p>
+    </div>
+
+    <script>
+        function submitTicket(event) {
+
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var issue = document.getElementById("issue").value;
+            var problem = document.getElementById("problem").value;
+
+            document.getElementById("summary").innerHTML =
+                "<h2>Ticket Summary</h2>" +
+                "<p><strong>Name:</strong> " + name + "</p>" +
+                "<p><strong>Issue Type:</strong> " + issue + "</p>" +
+                "<p><strong>Problem:</strong> " + problem + "</p>" +
+                "<p><strong>Status:</strong> Ticket Submitted</p>";
+        }
+    </script>
+
+</body>
+</html>
