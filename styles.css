@@ -8,14 +8,17 @@ nav {
     background-color: #8ec5ff;
     width: 100%;
     padding: 15px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
+/* links inside the bar */
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
 }
 
