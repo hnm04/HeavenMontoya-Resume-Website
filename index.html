@@ -6,7 +6,7 @@
     <title>Heaven Montoya</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script type="module" src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
     <nav>
@@ -31,7 +31,7 @@
     </div>
     <p id="quote"></p>
 
-   <py-script>
+  <py-script>
     import random
     from js import document
 
@@ -44,9 +44,12 @@
         "Either write something worth reading or do something worth writing. - Benjamin Franklin",
         "The only way to do great work is to love what you do. - Steve Jobs",
         "If you can dream it, you can achieve it. - Zig Ziglar"
-        ]
+    ]
 
-    document.getElementById("quote").innerText = random.choice(quotes)
+    def show_quote(*args):
+        document.getElementById("quote").innerText = random.choice(quotes)
+
+    show_quote()
     </py-script>
 </body>
 </html>
