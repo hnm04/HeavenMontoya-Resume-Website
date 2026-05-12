@@ -5,18 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive IT Ticket</title>
 
+    <style>
+        nav {
+            background-color: #8ec5ff;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-    <link rel="stylesheet" href="styles.css">
-    
+
+        nav a {
+            color: white;
+        }
+
+        nav a:hover {
+            color: #dff1ff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        h1 {
+            color: #3b82c4;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #5da9e9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #summary {
+            background-color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="interactive.html">Interactive</a>
-        <a href="portfolio.html">Portfolio</a>
-    </nav>
 
     <h1>Try an IT Helpdesk Ticket</h1>
 
@@ -37,6 +89,7 @@
 
     <div id="summary">
         <h2>Ticket Summary</h2>
+        <p>No ticket submitted yet.</p>
     </div>
 
     <script>
