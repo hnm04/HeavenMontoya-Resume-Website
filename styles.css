@@ -75,7 +75,9 @@ button#downloadBtn:hover {
     }
 }
 <!------Portfolio ------->
-
+* {
+    box-sizing: border-box;
+}
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
