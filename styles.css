@@ -77,16 +77,16 @@ button#downloadBtn:hover {
 <!------Portfolio ------->
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    justify-items: center;
     margin-top: 20px;
 }
-/* Each project box */
+
 .portfolio-card {
     background-color: white;
-    width: 280px;
+    width: 45%;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
@@ -120,7 +120,7 @@ button#downloadBtn:hover {
 }
 
 @media (max-width: 768px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
+    .portfolio-card {
+        width: 90%;
     }
- }
+}
