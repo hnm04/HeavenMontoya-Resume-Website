@@ -74,22 +74,20 @@ button#downloadBtn:hover {
         flex-direction: column;
     }
 }
-<!------Portfolio ------->
+/* ------ Portfolio ------ */
 
 .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .portfolio-card {
     background-color: white;
-    flex: 0 1 45%;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-sizing: border-box;
 }
 
 /* Image */
@@ -104,7 +102,7 @@ button#downloadBtn:hover {
     color: #3b82c4;
 }
 
-/* Button link */
+/* Button */
 .portfolio-card a {
     display: inline-block;
     margin-top: 10px;
@@ -121,7 +119,7 @@ button#downloadBtn:hover {
 
 /* Mobile */
 @media (max-width: 768px) {
-    .portfolio-card {
-        flex: 0 1 90%;
+    .portfolio-container {
+        grid-template-columns: 1fr;
     }
 }
