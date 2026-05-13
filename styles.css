@@ -26,6 +26,29 @@ nav a:hover {
     color: #dff1ff;
 }
 
+/* About Section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
 
 .resume-container {
     display: flex;
