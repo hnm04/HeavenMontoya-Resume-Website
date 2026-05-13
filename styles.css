@@ -13,26 +13,6 @@ nav {
     margin: 0;
 }
 
-/* HOME NAV IMAGE */
-.home-nav {
-    
-    background-size: cover;
-    background-position: center;
-}
-
-/* RESUME NAV IMAGE */
-.resume-nav {
-    
-    background-size: cover;
-    background-position: center;
-}
-
-/* PORTFOLIO NAV IMAGE */
-.portfolio-nav {
-    
-    background-size: cover;
-    background-position: center;
-}
 
 /* links inside the bar */
 nav a {
