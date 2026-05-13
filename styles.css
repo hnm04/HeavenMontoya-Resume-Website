@@ -15,21 +15,21 @@ nav {
 
 /* HOME NAV IMAGE */
 .home-nav {
-    background-image: url("home.jpg");
+    background-image: url("Assets/Homepage.pdf");
     background-size: cover;
     background-position: center;
 }
 
 /* RESUME NAV IMAGE */
 .resume-nav {
-    background-image: url("resume.jpg");
+    background-image: url("Assets/Resume.pdf");
     background-size: cover;
     background-position: center;
 }
 
 /* PORTFOLIO NAV IMAGE */
 .portfolio-nav {
-    background-image: url("portfolio.jpg");
+    background-image: url("Assets/portfolio.pdf");
     background-size: cover;
     background-position: center;
 }
