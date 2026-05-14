@@ -12,3 +12,19 @@ let quotes = [
 let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 document.getElementById("quote").innerText = randomQuote;
+
+function submitTicket(event) {
+
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var issue = document.getElementById("issue").value;
+            var problem = document.getElementById("problem").value;
+
+            document.getElementById("summary").innerHTML =
+                "<h2>Ticket Summary</h2>" +
+                "<p><strong>Name:</strong> " + name + "</p>" +
+                "<p><strong>Issue Type:</strong> " + issue + "</p>" +
+                "<p><strong>Problem:</strong> " + problem + "</p>" +
+                "<p><strong>Status:</strong> Ticket Submitted</p>";
+    }
