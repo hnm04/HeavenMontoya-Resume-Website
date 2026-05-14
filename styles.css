@@ -44,7 +44,7 @@ nav a:hover {
 
 .about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;  
     align-items: center;
     gap: 40px;
     margin: 40px auto;
@@ -65,19 +65,20 @@ nav a:hover {
 }
 .quote-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
+    justify-content: flex-end;   /* moves quote box to the right */
     width: 90%;
+    margin: 40px auto;
 }
 
 .quote-box {
-    background-color: #3b82c4;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
-    
+    width: 40%;
+    text-align: center;
+    font-size: 1.2rem;
 }
+
 .resume-container {
     display: flex;
     gap: 20px;
