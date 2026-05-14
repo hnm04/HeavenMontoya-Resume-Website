@@ -59,7 +59,7 @@ nav a:hover {
 }
 .quote-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin: 40px auto;
     width: 90%;
@@ -69,7 +69,8 @@ nav a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 50%
+    width: 50%;
+    
 }
 
 
