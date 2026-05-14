@@ -40,11 +40,9 @@ nav a:hover {
     display: block;
 }
 
-/* About Section */
-
 .about-container {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     align-items: center;
     gap: 40px;
     margin: 40px auto;
@@ -56,23 +54,23 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     width: 50%;
+    text-align: left;
 }
 
 .about-image img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin: 40px auto;
-    width: 90%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .quote-container {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     width: 90%;
     margin: 40px auto;
 }
+
 
 .quote-box {
     background-color: white;
@@ -82,6 +80,7 @@ nav a:hover {
     text-align: center;
     font-size: 1.2rem;
 }
+
 
 .resume-container {
     display: flex;
