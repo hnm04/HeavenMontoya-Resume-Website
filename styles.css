@@ -42,7 +42,6 @@ nav a:hover {
 
 .about-container {
     display: flex;
-    background-color: #0a1172;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -74,7 +73,7 @@ nav a:hover {
 
 
 .quote-box {
-    background-color: white;
+    background-color: #3b82c4;
     padding: 20px;
     border-radius: 10px;
     width: 40%;
