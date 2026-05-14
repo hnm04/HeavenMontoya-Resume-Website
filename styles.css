@@ -128,6 +128,12 @@ button#downloadBtn:hover {
     background-color: #3d8bd1;
 }
 
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+}
+
 
 
 .portfolio-container {
