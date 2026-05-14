@@ -80,7 +80,9 @@ nav a:hover {
     text-align: center;
     font-size: 1.2rem;
 }
-
+h1 {
+    color: #3b82c4;
+}
 
 .resume-container {
     display: flex;
